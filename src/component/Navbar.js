@@ -20,8 +20,9 @@ export const Navbar = () => {
               delay: 0.1,
               ease: [0, 0.71, 0.2, 1.01]
             }}
+            className=''
             >
-                <div className='flex flex-row h-[50px] items-center  justify-between lg:flex lg:flex-row lg:justify-center lg:items-center text-center lg:my-[2%]'>
+                <div className='flex flex-row h-[50px] items-center  justify-between lg:flex lg:flex-row lg:justify-center lg:items-center text-center lg:my-[2%] '>
                     <div className='w-[50%]'>
                     <h1 className='text-2xl font-bold'><span className='text-sky-600'>Car</span>insurance</h1>
                     </div>

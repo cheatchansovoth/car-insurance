@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../component/home-cars.png'
 export const Home = () => {
   return (
-    <div className='bg-blue-400'>
+    <div className='bg-blue-200 lg:relative lg:z-0'>
       <div className='w-screen lg:flex lg:flex-row justify-center p-10'>
       <div className='order-last'>
         <img src={img} alt='car' className='w-full '/>
