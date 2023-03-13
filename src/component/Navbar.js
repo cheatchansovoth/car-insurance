@@ -32,7 +32,7 @@ export const Navbar = () => {
                         <a href='#'>Home</a>
                         <a href='#'>About</a>
                         <a href='#'>Pricing</a>
-                        <a href='#' className='w-[20%] bg-cyan-600 rounded-2xl p-1'>Try Now</a>
+                        <a href='#' className='w-[20%] bg-cyan-600 rounded-2xl p-1 font-bold'>Try Now</a>
                     </div>
                     <div className='lg:hidden'>
                     <a href='#' className='w-[30%] bg-cyan-600 rounded-xl p-1'>Try Now</a>
