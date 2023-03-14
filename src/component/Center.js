@@ -1,14 +1,27 @@
 import React from 'react'
 import { BiLike } from "react-icons/bi";
+import { motion } from "framer-motion";
+
 export const Center = () => {
   return (
     <div className='bg-slate-600'>
       <div className='lg:space-y-10 lg:space-x-10 lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-[10vh] h-[80vh] flex flex-col justify-center items-center text-center lg:p-[15%] '>
-        <div className='text-center my-10  space-y-5 mx-[15%]'>
+        <motion.div className='text-center my-10  space-y-5 mx-[15%]'
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration:0.5
+              }}
+              >
           <h1 className='text-2xl font-semibold'>Having trouble deciding?</h1>
           <h2 className='text-xl font-semibold'>Answer Two questions to help us point you in the right direction for a better deal on your car insurance</h2>
-        </div>
-        <div className='lg:flex'>
+        </motion.div>
+        <motion.div className='lg:flex'
+         initial={{ opacity: 0, scale: 0.5 }}
+         whileInView={{ opacity: 1, scale: 1 }}
+         transition={{
+           duration:0.5
+         }}>
             <div className='lg:w-[60%] lg:space-y-10'>
               <h1 className='text-2xl font-semibold lg:text-5xl lg:font-bold'>Personalize your cover with our policy upgrades</h1>
               <h2 className='font-semibold lg:text-xl lg:mx-5'>You can learn more about our range of policy upgrades, each of which can be easily added to your car insurance</h2>
@@ -21,10 +34,15 @@ export const Center = () => {
                 <h3 className='text-xl text-blue-800 font-semibold lg:text-2xl'><span className='text-3xl'>></span> Keycare Cover</h3>
                 <h3 className='text-xl text-blue-800 font-semibold lg:text-2xl'><span className='text-3xl'>></span> Motor Legal Protection</h3>
             </div>
-        </div>
+        </motion.div>
       </div>
-      <div className='space-y-10 h-[100vh] lg:h-[70vh] my-10'>
-        <div className='flex flex-col justify-center justify-center lg:justify-between items-center text-center lg:flex-row lg:space-y-0 lg:mx-[15%] h-[70vh] lg:h-[30vh]'>
+      <div className='space-y-10 h-[100vh] lg:h-[70vh] my-10' >
+        <motion.div className='flex flex-col justify-center justify-center lg:justify-between items-center text-center lg:flex-row lg:space-y-0 lg:mx-[15%] h-[70vh] lg:h-[30vh]'
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration:0.5
+              }}>
             <div className='space-y-3'>
             <div className='flex flex-row justify-center items-center'>
               <p className='text-3xl text-blue-700 font-semibold'><BiLike/></p>
@@ -48,9 +66,15 @@ export const Center = () => {
             <h1>Award winning cover</h1>
             <p>More than 90% of our customers said they would renew based on the claims service</p>
           </div>
-        </div>
+        </motion.div>
         <div className='flex flex-col lg:justify-center justify-center lg:space-x-20 items-center text-center lg:flex-row lg:space-y-0  h-[100vh] lg:h-[50vh]  bg-slate-400'>
-          <div>
+          <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration:0.5
+      }}
+      >
             <h1 className='text-3xl text-blue-700 font-semibold'>Navigation</h1>
             <div>
             <h1>About</h1>
@@ -58,8 +82,14 @@ export const Center = () => {
             <h1>News</h1>
             <h1>Contacts</h1>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration:0.5
+      }}
+      >
             <h1 className='text-3xl text-blue-700 font-semibold'>Contacts</h1>
             <div>
             <h1>Car Insurance Glasgow D04 89GR</h1>
@@ -67,16 +97,28 @@ export const Center = () => {
             <h1>info@demolink.org</h1>
             <h1>7 Days a week from 9:00 am to 7:00 pm</h1>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration:0.5
+      }}
+      >
             <h1 className='text-3xl text-blue-700 font-semibold'>Follow Us</h1>
             <div>
             <h1>Facebook</h1>
             <h1>Twitter</h1>
             <h1>Google +</h1>
             </div>
-          </div>
-          <div className='lg:max-w-[40%]'>
+          </motion.div>
+          <motion.div className='lg:max-w-[40%]'
+                initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration:0.5
+      }}
+      >
             <h1 className='text-3xl text-blue-700 font-semibold'>About</h1>
             <div className='mx-[15%] lg:mx-[0%]'>
               <p>“Car Insurance” is a NY based insurance company that was set up 1993 to specialise in Car Insurance. In 2005 we 
@@ -84,7 +126,7 @@ export const Center = () => {
                 discount on the overall price. In 2013 we launched our Black Box Insurance product LittleBox which helps safe drivers to
                  receive discounts based on their driving style.</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
