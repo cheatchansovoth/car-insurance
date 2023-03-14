@@ -1,11 +1,13 @@
+import { Carousel } from 'flowbite-react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react'
 import img from '../component/home-cars.png'
 export const Home = () => {
   return (
-    <div className='bg-blue-200 lg:relative lg:z-0'>
+    <div className='lg:z-0 lg:h-[100vh] lg:flex lg:items-center bg-slate-600'>
       <div className='w-screen lg:flex lg:flex-row justify-center p-10'>
       <div className='order-last'>
-        <img src={img} alt='car' className='w-full '/>
+        <img src={img}></img>
       </div>
       <div className='mx-3 lg:space-y-10 lg:w-[30%]'>
         <h1 className='text-3xl lg:text-6xl font-bold'>Car <br/>Insurance </h1>

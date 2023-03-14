@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineCar,AiOutlineWifi } from "react-icons/ai";
 export const Hero = () => {
   return (
-    <div className='min-w-full space-y-10 mt-10 lg:mt-0 lg:flex lg:space-y-0 lg:space-x-3 lg:justify-center lg:relative lg:bottom-10 lg:z-20'>
+    <div className='lg:w-[100%] space-y-10 mt-10 lg:mt-0  lg:py-[15%] lg:flex lg:space-y-0 lg:space-x-3 lg:justify-center lg:z-20  bg-slate-400'>
         <div className='bg-slate-600 bg-opacity-40 h-[50vh] w-[100%] flex flex-col items-center justify-center text-center lg:w-[50%] hover:bg-black hover:text-white hover:bg-opacity-60 hover:duration-500 hover:ease-in'>
             <div className='flex flex-col justify-center items-center m-8 space-y-5  hover:text-white'>
                 <p className='text-8xl text-blue-600'><AiOutlineCar/></p>
