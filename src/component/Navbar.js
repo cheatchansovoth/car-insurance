@@ -12,17 +12,15 @@ export const Navbar = () => {
     };
 
   return (
-            <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.2,
-              delay: 0.1,
-              ease: [0, 0.71, 0.2, 1.01]
-            }}
+            <div
             className='sticky top-0 bg-slate-500'
             >
-                <div className='flex flex-row h-[50px] items-center  justify-between lg:flex lg:flex-row lg:justify-center lg:items-center text-center lg:p-10'>
+                <motion.div className='flex flex-row h-[50px] items-center  justify-between lg:flex lg:flex-row lg:justify-center lg:items-center text-center lg:p-10'
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{
+                          duration:0.5
+                        }}>
                     <div className='w-[50%]'>
                     <h1 className='text-2xl font-bold'><span className='text-sky-600'>Car</span>insurance</h1>
                     </div>
@@ -38,10 +36,10 @@ export const Navbar = () => {
                     <div className='lg:hidden'>
                     <a href='#' className='w-[30%] bg-cyan-600 rounded-xl p-1'>Try Now</a>
                     </div>
-                </div>
+                </motion.div>
                  {show && 
                  (
-                    <motion.div className='flex flex-col items-center space-y-3 justify-center lg:flex-row lg:justify-end lg:space-x-5 lg:space-y-0 lg:w-[70%] lg:mr-[10%] lg:flex lg:hidden'
+                    <div className='flex flex-col items-center space-y-3 justify-center lg:flex-row lg:justify-end lg:space-x-5 lg:space-y-0 lg:w-[70%] lg:mr-[10%] lg:flex lg:hidden'
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -53,10 +51,10 @@ export const Navbar = () => {
                     <a href='#'>Home</a>
                     <a href='#'>About</a>
                     <a href='#'>Pricing</a>
-                    </motion.div>
+                    </div>
                 )
                 }
-            </motion.div>
+            </div>
     
   )
 }
